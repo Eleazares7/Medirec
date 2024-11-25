@@ -1,0 +1,22 @@
+.nav-links .nav-link {
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    color: #333;
+  }
+  
+  .nav-links .nav-link:hover {
+    background-color: #f0f0f0;
+    color: #0056b3;
+    text-decoration: underline;
+    border-radius: 5px;
+  }
+
+  .user-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  #nav-dropdown::after {
+    display: none;
+  }

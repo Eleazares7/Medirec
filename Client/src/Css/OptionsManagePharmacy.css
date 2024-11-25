@@ -1,0 +1,9 @@
+.card-image {
+    height: 200px; /* Ajusta la altura según lo necesario */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+}
+
+.custom-card {
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}

@@ -1,0 +1,16 @@
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-image {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .service-card .btn {
+    width: 100%;
+    padding: 10px;
+  }
+  
