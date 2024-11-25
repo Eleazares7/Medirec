@@ -72,7 +72,7 @@ export const OptionsManagePharmacy = () => {
                             <Card.Text>
                                 Visualiza las estadísticas de ventas y el rendimiento de los medicamentos.
                             </Card.Text>
-                            <Button variant="primary">Ver Estadísticas</Button>
+                            <Button variant="primary" onClick={()=>navigate("/staticsMedicines")}>Ver Estadísticas</Button>
                         </Card.Body>
                     </Card>
                 </Col>

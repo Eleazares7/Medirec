@@ -19,6 +19,7 @@ import { HomeDoctor } from "../Views/Doctor/HomeDoctor";
 import { ManagePharmacy } from "../Views/Admin/ManagePharmacy";
 import { AddMedicine } from "../Views/Admin/AddMedicine";
 import { TableMedicines } from "../Views/Admin/TableMedicines";
+import { StaticsMedicines } from "../Views/Admin/StaticsMedicines";
 
 //Protected Routes
 import { ProtectedRoutes } from "./ProtectedRoutes";
@@ -102,6 +103,12 @@ const AppRouter = createBrowserRouter([
     path: "/tableMedicines",
     element: (<ProtectedRoutes>
       <TableMedicines />
+    </ProtectedRoutes>)
+  },
+  {
+    path: "/staticsMedicines",
+    element: (<ProtectedRoutes>
+      <StaticsMedicines/>
     </ProtectedRoutes>)
   }
 ]);
