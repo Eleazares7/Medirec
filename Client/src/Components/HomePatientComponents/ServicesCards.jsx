@@ -27,17 +27,15 @@ export const ServiceCards = () => {
         "Accede a nuestra farmacia en línea para adquirir tus medicamentos de forma rápida y segura. Consulta la disponibilidad, precios y recibe tus productos directamente en tu domicilio.",
     },
     {
-      title: `Historial de citas médicas de ${
-        user ? user.user_name : "Usuario"
-      }`,
+      title: `Historial de citas médicas de ${user ? user.user_name : "Usuario"
+        }`,
       image: HistorialCitas,
       description:
         "Consulta el registro completo de tus citas médicas anteriores. Revisa detalles importantes, fechas y resultados para dar seguimiento a tu salud de manera organizada.",
     },
     {
-      title: `Historial de recetas médicas de ${
-        user ? user.user_name : "Usuario"
-      }`,
+      title: `Historial de recetas médicas de ${user ? user.user_name : "Usuario"
+        }`,
       image: RecetasMedicas,
       description:
         "Mantén un control de tus recetas médicas y medicamentos prescritos. Accede a tus recetas anteriores para verificar indicaciones, dosis y recomendaciones médicas.",
@@ -78,7 +76,7 @@ export const ServiceCards = () => {
                   if (service.title.includes("Agenda una cita")) {
                     navigate("/scheduleAppointment")
                   } else if (service.title.includes("Compra medicamentos")) {
-                    console.log("Redirigiendo a comprar medicamentos...");
+                    navigate("/buyMedicines");
                   } else if (
                     service.title.includes("Historial de citas médicas")
                   ) {

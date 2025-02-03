@@ -21,6 +21,11 @@ import { AddMedicine } from "../Views/Admin/AddMedicine";
 import { TableMedicines } from "../Views/Admin/TableMedicines";
 import { StaticsMedicines } from "../Views/Admin/StaticsMedicines";
 
+
+//Patients views
+import BuyMedicines from "../Views/Patients/BuyMedicines";
+import { CheckoutPage } from "../Components/BuyMedicinesComponents/Chekoutpage";
+
 //Protected Routes
 import { ProtectedRoutes } from "./ProtectedRoutes";
 
@@ -108,8 +113,19 @@ const AppRouter = createBrowserRouter([
   {
     path: "/staticsMedicines",
     element: (<ProtectedRoutes>
-      <StaticsMedicines/>
+      <StaticsMedicines />
     </ProtectedRoutes>)
+  }, {
+    path: '/buyMedicines',
+    element: <ProtectedRoutes>
+      <BuyMedicines />
+    </ProtectedRoutes>
+  },
+  {
+    path: '/checkout',
+    element: <ProtectedRoutes>
+      <CheckoutPage/>
+    </ProtectedRoutes>
   }
 ]);
 

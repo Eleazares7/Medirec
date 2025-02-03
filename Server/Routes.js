@@ -19,6 +19,8 @@ import { deleteMedicineById } from "./JavaScript/Admin/deleteMedicine.js";
 import { getMedicineById } from "./JavaScript/Admin/getMedicineById.js";
 import { updateMedicine } from "./JavaScript/Admin/updateMedicine.js";
 
+import { paypalPayment } from "./JavaScript/Patient/PayPal.js";
+
 
 export const setUpRoutes = (app, dbMedirec) => {
   //Register Patient
@@ -42,5 +44,8 @@ export const setUpRoutes = (app, dbMedirec) => {
   deleteMedicineById(app,dbMedirec);
   getMedicineById(app,dbMedirec);
   updateMedicine(app,dbMedirec);
+
+  paypalPayment(app)
+  
 
 };

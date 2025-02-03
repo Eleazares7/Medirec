@@ -4,7 +4,7 @@ import { getDoctors } from "../../AxiosRequest/FormDoctor/getDoctors";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useUser } from "../../Context/SaveUserData";
-
+import { PayPalButton } from "../PayPalComponents/PayPalButton";
 export const AppointmentForm = () => {
   const [doctors, setDoctors] = useState([]); // Cambiar el estado de string a array
   const [doctor, setDoctor] = useState(""); // Estado para el doctor seleccionado
@@ -150,6 +150,8 @@ export const AppointmentForm = () => {
             Agendar
           </Button>
         </div>
+
+        <PayPalButton/>
       </Form>
     </Container>
   );

@@ -60,12 +60,7 @@ export const ABC_Medicines = () => {
         <tbody>
           {medicines.map((medicine) => (
             <tr key={medicine.id_medicine}>
-              <td>{medicine.id_medicine}</td>
-              <td>{medicine.medicine_name}</td>
-              <td>{medicine.medicine_description}</td>
-              <td>{medicine.medicine_quantity}</td>
-              <td>{medicine.medicine_administration_type}</td>
-              <td>{medicine.medicine_stock}</td>
+               
               <td>
                 <button
                   className="btn btn-warning me-2"
